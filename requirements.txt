@@ -1,0 +1,15 @@
+flwr
+fastapi
+uvicorn
+torch
+torchvision
+transformers
+safetensors
+streamlit
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+opacus
+datasets

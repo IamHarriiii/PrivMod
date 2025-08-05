@@ -1,0 +1,33 @@
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    container_name: fl-server
+    ports:
+      - "8080:8080"
+
+  backend-api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend-api
+    ports:
+      - "8000:8000"
+
+  fl-client-1:
+    build:
+      context: .
+      dockerfile: clients/Dockerfile
+    container_name: fl-client-1
+    depends_on:
+      - server
+
+  fl-client-2:
+    build:
+      context: .
+      dockerfile: clients/Dockerfile
+    container_name: fl-client-2
+    depends_on:
+      - server

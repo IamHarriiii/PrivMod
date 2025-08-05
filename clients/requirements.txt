@@ -1,0 +1,10 @@
+flwr>=1.18.0
+torch>=2.0.0
+transformers>=4.50.0
+safetensors>=0.5.0
+pandas>=2.0.0
+streamlit>=1.20.0
+scikit-learn>=1.0.0
+fastapi>=0.68.0
+uvicorn>=0.15.0
+datasets
